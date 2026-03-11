@@ -4,9 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>SportsHub</title>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
+<section class="hero">
 
+<div class="hero-content">
+
+<h2>Gear Up With SportsHub</h2>
+
+<p>Elite Sports Equipment For Champions</p>
+
+<button class="hero-btn">Shop Now</button>
+
+</div>
+
+</section>
 <body>
 
 <header class="header">
@@ -32,10 +45,16 @@
 </header>
 
 <div class="filters">
+
 <button onclick="filterCategory('all')">All</button>
-<button onclick="filterCategory('cricket')">Cricket</button>
 <button onclick="filterCategory('football')">Football</button>
+<button onclick="filterCategory('cricket')">Cricket</button>
+<button onclick="filterCategory('basketball')">Basketball</button>
 <button onclick="filterCategory('fitness')">Fitness</button>
+<button onclick="filterCategory('badminton')">Badminton</button>
+<button onclick="filterCategory('running')">Running</button>
+<button onclick="filterCategory('accessories')">Accessories</button>
+
 </div>
 
 <section class="products" id="product-list">
@@ -81,11 +100,22 @@
 
 <div id="popup">Added to Cart ✅</div>
 
+<div id="cart-overlay" onclick="toggleCart()"></div>
+
 <div class="cart" id="cart">
+
+<div class="cart-header">
 <h2>Your Cart</h2>
-<ul id="cart-items"></ul>
-<h3>Total ₹<span id="cart-total">0</span></h3>
-<button onclick="toggleCart()">Close</button>
+<button onclick="toggleCart()">✖</button>
+</div>
+
+<div class="cart-items" id="cart-items"></div>
+
+<div class="cart-footer">
+<h3>Total: ₹<span id="cart-total">0</span></h3>
+<button class="checkout-btn">Checkout</button>
+</div>
+
 </div>
 
 <script src="script.js"></script>
