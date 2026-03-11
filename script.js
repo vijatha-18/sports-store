@@ -1,3 +1,5 @@
+// PRODUCTS
+
 const products = [
 
 { name:"Football", price:899, category:"football", img:"https://images.unsplash.com/photo-1575361204480-aadea25e6e68" },
@@ -28,210 +30,229 @@ const products = [
 { name:"Shuttlecock Pack", price:399, category:"badminton", img:"https://images.unsplash.com/photo-1595433562696-8f7c9aee06b6" },
 { name:"Badminton Shoes", price:2299, category:"badminton", img:"https://images.unsplash.com/photo-1542291026-7eec264c27ff" },
 { name:"Badminton Net", price:999, category:"badminton", img:"https://images.unsplash.com/photo-1517649763962-0c623066013b" },
-{ name:"Racket Grip", price:199, category:"badminton", img:"https://images.unsplash.com/photo-1606813909355-4c1a01eafc5b" },
-
-{ name:"Running Shoes", price:3499, category:"running", img:"https://images.unsplash.com/photo-1542291026-7eec264c27ff" },
-{ name:"Sports T-Shirt", price:799, category:"running", img:"https://images.unsplash.com/photo-1520975922284-8b456906c813" },
-{ name:"Sports Shorts", price:699, category:"running", img:"https://images.unsplash.com/photo-1526403224905-8c64b2c5a0f4" },
-{ name:"Running Cap", price:399, category:"running", img:"https://images.unsplash.com/photo-1514996937319-344454492b37" },
-{ name:"Hydration Belt", price:599, category:"running", img:"https://images.unsplash.com/photo-1526403224905-8c64b2c5a0f4" },
-
-{ name:"Sports Backpack", price:1199, category:"accessories", img:"https://images.unsplash.com/photo-1514477917009-389c76a86b68" },
-{ name:"Water Bottle", price:299, category:"accessories", img:"https://images.unsplash.com/photo-1526403224905-8c64b2c5a0f4" },
-{ name:"Gym Gloves", price:499, category:"accessories", img:"https://images.unsplash.com/photo-1579758629938-03607ccdbaba" },
-{ name:"Wrist Bands", price:199, category:"accessories", img:"https://images.unsplash.com/photo-1606813909355-4c1a01eafc5b" },
-{ name:"Sports Towel", price:249, category:"accessories", img:"https://images.unsplash.com/photo-1517836357463-d25dfeac3438" }
+{ name:"Racket Grip", price:199, category:"badminton", img:"https://images.unsplash.com/photo-1606813909355-4c1a01eafc5b" }
 
 ];
 
-// duplicate items to reach 50+
+// duplicate to reach 50+
 while(products.length < 55){
 products.push({...products[Math.floor(Math.random()*products.length)]});
 }
 
+
+// RENDER PRODUCTS
+
 const container = document.getElementById("product-list");
 
 function renderProducts(list){
+
 container.innerHTML="";
 
 list.forEach(p=>{
-container.innerHTML += `
+
+container.innerHTML+=`
+
 <div class="product ${p.category}" data-price="${p.price}">
+
 <img src="${p.img}">
+
 <h3>${p.name}</h3>
+
 <p>₹${p.price}</p>
+
 <button onclick="addToCart('${p.name}',${p.price})">Add to Cart</button>
+
 </div>
+
 `;
+
 });
+
 }
 
 renderProducts(products);
 
-let cart = JSON.parse(localStorage.getItem("cart")) || {}
 
-updateCart()
+// CART SYSTEM
+
+let cart = JSON.parse(localStorage.getItem("cart")) || {};
+
 
 function addToCart(name,price){
 
 if(cart[name]){
 
 if(cart[name].qty >= 10){
-alert("Out of Stock ❌")
-return
+alert("Out of stock");
+return;
 }
 
-cart[name].qty++
+cart[name].qty++;
 
 }else{
 
-cart[name]={price:price,qty:1}
+cart[name] = {price:price, qty:1};
 
 }
 
-localStorage.setItem("cart",JSON.stringify(cart))
-
-updateCart()
-
-showPopup()
+updateCart();
+showPopup();
 
 }
+
+
 function updateCart(){
 
-let container=document.getElementById("cart-items")
-container.innerHTML=""
+let cartContainer = document.getElementById("cart-items");
 
-let total=0
-let count=0
+cartContainer.innerHTML="";
+
+let total=0;
+let count=0;
 
 for(let item in cart){
 
-let div=document.createElement("div")
-div.className="cart-item"
+cartContainer.innerHTML+=`
 
-div.innerHTML=`
+<div class="cart-item">
 
-<div class="cart-item-name">${item}</div>
+<span>${item}</span>
 
 <div class="qty-controls">
 
 <button onclick="changeQty('${item}',-1)">-</button>
-
 <span>${cart[item].qty}</span>
-
 <button onclick="changeQty('${item}',1)">+</button>
 
 </div>
 
-<div>₹${cart[item].price * cart[item].qty}</div>
+<button onclick="removeItem('${item}')">✖</button>
 
-<button onclick="removeItem('${item}')">❌</button>
+</div>
 
-`
+`;
 
-container.appendChild(div)
-
-total+=cart[item].price*cart[item].qty
-count+=cart[item].qty
+total += cart[item].price * cart[item].qty;
+count += cart[item].qty;
 
 }
 
-document.getElementById("cart-total").innerText=total
-document.getElementById("cart-count").innerText=count
+document.getElementById("cart-total").innerText = total;
+document.getElementById("cart-count").innerText = count;
 
-localStorage.setItem("cart",JSON.stringify(cart))
+localStorage.setItem("cart",JSON.stringify(cart));
 
 }
+
+
+function changeQty(name,amount){
+
+cart[name].qty += amount;
+
+if(cart[name].qty <= 0){
+delete cart[name];
+}
+
+if(cart[name] && cart[name].qty > 10){
+cart[name].qty = 10;
+alert("Max 10 allowed");
+}
+
+updateCart();
+
+}
+
+
+function removeItem(name){
+
+delete cart[name];
+
+updateCart();
+
+}
+
 
 function toggleCart(){
-document.getElementById("cart").classList.toggle("active")
+
+document.getElementById("cart").classList.toggle("active");
+document.getElementById("cart-overlay").classList.toggle("active");
+
 }
+
 
 function showPopup(){
 
-let popup=document.getElementById("popup")
+let popup = document.getElementById("popup");
 
-popup.style.display="block"
+popup.style.display="block";
 
-setTimeout(()=>{
-popup.style.display="none"
-},1500)
+setTimeout(()=>popup.style.display="none",1500);
 
 }
+
+
+// SEARCH
 
 document.getElementById("search").addEventListener("keyup",function(){
 
-let filter=this.value.toLowerCase()
-let found=false
+let value = this.value.toLowerCase();
 
-document.querySelectorAll(".product").forEach(p=>{
+let filtered = products.filter(p => p.name.toLowerCase().includes(value));
 
-let name=p.querySelector("h3").innerText.toLowerCase()
+renderProducts(filtered);
 
-if(name.includes(filter)){
-p.style.display="block"
-found=true
-}else{
-p.style.display="none"
-}
+document.getElementById("no-products").style.display = filtered.length ? "none" : "block";
 
-})
+});
 
-document.getElementById("no-products").style.display=found?"none":"block"
 
-})
-
-function filterCategory(category){
-
-document.querySelectorAll(".product").forEach(p=>{
-
-if(category==="all" || p.classList.contains(category)){
-p.style.display="block"
-}else{
-p.style.display="none"
-}
-
-})
-
-}
+// SORT
 
 document.getElementById("sort").addEventListener("change",function(){
 
-let products=[...document.querySelectorAll(".product")]
-let container=document.getElementById("product-list")
+let sorted=[...products];
 
-products.sort((a,b)=>{
+sorted.sort((a,b)=>this.value==="low"?a.price-b.price:b.price-a.price);
 
-let pa=a.dataset.price
-let pb=b.dataset.price
+renderProducts(sorted);
 
-return this.value==="low"?pa-pb:pb-pa
+});
 
-})
 
-products.forEach(p=>container.appendChild(p))
+// CATEGORY FILTER
 
-})
+function filterCategory(cat){
 
-const toggle=document.getElementById("themeToggle")
+if(cat==="all") return renderProducts(products);
 
-let theme=localStorage.getItem("theme")
+renderProducts(products.filter(p=>p.category===cat));
+
+}
+
+
+// THEME TOGGLE
+
+const toggle=document.getElementById("themeToggle");
+
+let theme=localStorage.getItem("theme");
 
 if(theme==="light"){
-document.body.classList.add("light")
-toggle.innerText="☀️"
+document.body.classList.add("light");
+toggle.innerText="☀️";
 }
 
 toggle.onclick=()=>{
 
-document.body.classList.toggle("light")
+document.body.classList.toggle("light");
 
 if(document.body.classList.contains("light")){
-localStorage.setItem("theme","light")
-toggle.innerText="☀️"
+localStorage.setItem("theme","light");
+toggle.innerText="☀️";
 }else{
-localStorage.setItem("theme","dark")
-toggle.innerText="🌙"
+localStorage.setItem("theme","dark");
+toggle.innerText="🌙";
 }
 
-}
+};
+
+updateCart();
