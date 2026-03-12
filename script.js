@@ -8,7 +8,7 @@ const products = [
 { name:"Shin Guards", price:699, category:"football", img:"https://images.unsplash.com/photo-1606813909355-4c1a01eafc5b" },
 { name:"Football Net", price:1799, category:"football", img:"https://images.unsplash.com/photo-1508098682722-e99c43a406b2" },
 
-{ name:"Cricket Bat", price:1999, category:"cricket", img:"https://images.unsplash.com/photo-1593341646782-e0b495cff86d" },
+{ name:"Cricket Bat", price:1999, category:"cricket", img:"https://assets-jiocdn.ajio.com/medias/sys_master/r…b9009ac5f8de9/-473Wx593H-702373995-blue-MODEL.jpg"},
 { name:"Cricket Ball", price:399, category:"cricket", img:"https://images.unsplash.com/photo-1584464491033-06628f3a6b7b" },
 { name:"Batting Gloves", price:999, category:"cricket", img:"https://images.unsplash.com/photo-1624880357913-a8539238245b" },
 { name:"Cricket Pads", price:1799, category:"cricket", img:"https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa" },
@@ -256,4 +256,5 @@ toggle.innerText="🌙";
 };
 
 updateCart();
+
 
