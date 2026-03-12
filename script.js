@@ -2,7 +2,7 @@
 
 const products = [
 
-{ name:"Football", price:899, category:"football", img:"https://images.unsplash.com/photo-1575361204480-aadea25e6e68" },
+{ name:"Football", price:899, category:"football", img:"https://assets-jiocdn.ajio.com/medias/sys_master/r…9009ac5f9d7b/-473Wx593H-702374038-multi-MODEL.jpg" },
 { name:"Football Boots", price:2499, category:"football", img:"https://images.unsplash.com/photo-1521417531039-3c63cbbd3f1c" },
 { name:"Goalkeeper Gloves", price:1299, category:"football", img:"https://images.unsplash.com/photo-1604586376807-f73185cf5861" },
 { name:"Shin Guards", price:699, category:"football", img:"https://images.unsplash.com/photo-1606813909355-4c1a01eafc5b" },
@@ -256,3 +256,4 @@ toggle.innerText="🌙";
 };
 
 updateCart();
+
