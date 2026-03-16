@@ -8,7 +8,7 @@ const products = [
 { name:"Shin Guards", price:699, category:"football", img:"https://flashhockey.in/wp-content/uploads/2025/06/Super-Nova-600x750.png" },
 { name:"Football Net", price:1799, category:"football", img:"https://img.freepik.com/premium-photo/soccer-goal-white-png-transparent-background_94628-26841.jpg" },
 
-{ name:"Cricket Bat", price:1999, category:"cricket", img:"https://shop.teamsg.in/cdn/shop/files/7_075f44bf-c833-4cb5-8d1b-262bbbb83891.png?v=1745324324&width=1946"},
+{ name:"Cricket Bat", price:1999, category:"cricket", img:"https://shop.teamsg.in/cdn/shop/files/7_075f44bf-c833-4cb5-8d1b-262bbbb83891.png?v=1745324324&width=1946" },
 { name:"Cricket Ball", price:399, category:"cricket", img:"https://scssports.in/products/sg-shield-20-cricket-ball?srsltid=AfmBOorR3Yy827Us32ebv5kwlKbR9WxjP1jT4TZ0gtWO1pXMMF2dYN9o" },
 { name:"Batting Gloves", price:999, category:"cricket", img:"https://wallpapers.com/images/hd/cricket-batting-gloves-m-r-f-brand-txj9h7kutuhyzo6w.jpg" },
 { name:"Cricket Pads", price:1799, category:"cricket", img:"https://5.imimg.com/data5/SELLER/Default/2023/5/307650115/XE/XU/GT/23974003/photoroom-20230506-140215-500x500.png" },
@@ -26,7 +26,7 @@ const products = [
 { name:"Resistance Bands", price:699, category:"fitness", img:"https://static.vecteezy.com/system/resources/thumbnails/048/871/510/small_2x/fitness-resistance-bands-3d-illustration-workout-and-exercise-icon-png.png" },
 { name:"Kettlebell", price:1599, category:"fitness", img:"https://freepngimg.com/save/42053-kettlebell-download-hd-png/1324x993" },
 
-{ name:"Badminton Racket", price:1299, category:"badminton", img:"https://www.vecteezy.com/free-png/badminton-racket"},
+{ name:"Badminton Racket", price:1299, category:"badminton", img:"https://www.vecteezy.com/free-png/badminton-racket" },
 { name:"Shuttlecock Pack", price:399, category:"badminton", img:"https://store.cosco.in/cdn/shop/files/J9A8038_copy_2_2_1024x1024.jpg?v=1762597338" },
 { name:"Badminton Shoes", price:2299, category:"badminton", img:"https://in.hndrd.co/cdn/shop/files/Artboard_1_66be91cb00.png?v=1749011273&width=800" },
 { name:"Badminton Net", price:999, category:"badminton", img:"https://in.hndrd.co/products/bn-90-badminton-net?srsltid=AfmBOorQ3Dh5_CjyD0tSRcnB7evsuME3nKugc5mCNlAjqUxSr9dxs33m" },
