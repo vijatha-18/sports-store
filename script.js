@@ -22,11 +22,11 @@ const products = [
 
 { name:"Dumbbells", price:1899, category:"fitness", img:"https://t3.ftcdn.net/jpg/06/04/58/12/360_F_604581226_x37uI5JgVGTir2BBC334UzYdqcieLG44.jpg" },
 { name:"Yoga Mat", price:799, category:"fitness", img:"https://static.vecteezy.com/system/resources/previews/049/238/570/non_2x/rolled-up-purple-yoga-mat-free-png.png" },
-{ name:"Skipping Rope", price:499, category:"fitness", img:"https://pngtree.com/freepng/skipping-rope-transparent-background_20008933.html" },
-{ name:"Resistance Bands", price:699, category:"fitness", img:"https://www.vecteezy.com/free-png/resistance-bands" },
+{ name:"Skipping Rope", price:499, category:"fitness", img:"https://cdnspecseu.bizay.com/cdn-cgi/image/format=webp,quality=80/8_1/imagens_GivingEurope_transformed/005396-017999999-3D135-FRT-PRO03-GIV.png?v=638473481363059831" },
+{ name:"Resistance Bands", price:699, category:"fitness", img:"https://energiefitness.in/products/best-quality-resistance-bands?srsltid=AfmBOoqDnG2otCmoqBwXBNojed4UWzsefjd99i3dnZWgq8Sv2U9pp8IU" },
 { name:"Kettlebell", price:1599, category:"fitness", img:"https://freepngimg.com/save/42053-kettlebell-download-hd-png/1324x993" },
   
-{ name:"Badminton Racket", price:1299, category:"badminton", img:"https://www.probadminton.in/products/yonex-astrox-7?srsltid=AfmBOopkHqfrnkHGiktv77PkTz5H8VBzB8qex5TMDlocwhiXQdvdj-Fa" },
+{ name:"Badminton Racket", price:1299, category:"badminton", img:"https://pngimg.com/d/badminton_PNG10448.png" },
 { name:"Shuttlecock Pack", price:399, category:"badminton", img:"https://store.cosco.in/cdn/shop/files/J9A8038_copy_2_2_1024x1024.jpg?v=1762597338" },
 { name:"Badminton Shoes", price:2299, category:"badminton", img:"https://in.hndrd.co/cdn/shop/files/Artboard_1_66be91cb00.png?v=1749011273&width=800" },
 { name:"Badminton Net", price:999, category:"badminton", img:"https://d2ncjxd2rk2vpl.cloudfront.net/red-csport/product/5c7ea6d7cb84a5277ebad5a2/600x600/95/outside/cbd33732-0b51-4475-efc4-9f8a399e240b" },
