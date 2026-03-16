@@ -30,8 +30,8 @@ const products = [
 { name:"Shuttlecock Pack", price:399, category:"badminton", img:"https://store.cosco.in/cdn/shop/files/J9A8038_copy_2_2_1024x1024.jpg?v=1762597338" },
 { name:"Badminton Shoes", price:2299, category:"badminton", img:"https://in.hndrd.co/cdn/shop/files/Artboard_1_66be91cb00.png?v=1749011273&width=800" },
 { name:"Badminton Net", price:999, category:"badminton", img:"https://static.vecteezy.com/system/resources/previews/037/278/272/non_2x/badminton-net-isolated-on-background-3d-rendering-illustration-free-png.png" },
-{ name:"Racket Grip", price:199, category:"badminton", img:"https://m.media-amazon.com/images/I/516qNIwY7UL.jpg" }
-
+{ name:"Racket Grip", price:199, category:"badminton", img:"https://m.media-amazon.com/images/I/516qNIwY7UL.jpg" },
+{ name:"cricket thigh gaurd", price:499, category:"cricket", img:"https://shop.teamsg.in/cdn/shop/files/1_21fc7f06-db1d-4881-a73b-075edf45559f.png?v=1720253322" },
 ];
 
 const container = document.getElementById("product-list");
@@ -200,14 +200,12 @@ document.getElementById("no-products").style.display = filtered.length ? "none" 
 
 // SORT
 
-document.getElementById("sort").addEventListener("change",function(){
-
-let sorted=[...products];
-
-sorted.sort((a,b)=>this.value==="low"?a.price-b.price:b.price-a.price);
-
-renderProducts(sorted);
-
+document.getElementById("search").addEventListener("keyup",function(){
+  
+searchValue = this.value.toLowerCase();
+  
+applyFilters();
+  
 });
 
 
