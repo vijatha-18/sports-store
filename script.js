@@ -34,14 +34,6 @@ const products = [
 
 ];
 
-// duplicate to reach 50+
-while(products.length < 55){
-products.push({...products[Math.floor(Math.random()*products.length)]});
-}
-
-
-// RENDER PRODUCTS
-
 const container = document.getElementById("product-list");
 
 function renderProducts(list){
