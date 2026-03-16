@@ -2,35 +2,35 @@
 
 const products = [
 
-{ name:"Football", price:899, category:"football", img:"https://assets-jiocdn.ajio.com/medias/sys_master/r…9009ac5f9d7b/-473Wx593H-702374038-multi-MODEL.jpg" },
-{ name:"Football Boots", price:2499, category:"football", img:"https://images.unsplash.com/photo-1521417531039-3c63cbbd3f1c" },
-{ name:"Goalkeeper Gloves", price:1299, category:"football", img:"https://images.unsplash.com/photo-1604586376807-f73185cf5861" },
-{ name:"Shin Guards", price:699, category:"football", img:"https://images.unsplash.com/photo-1606813909355-4c1a01eafc5b" },
-{ name:"Football Net", price:1799, category:"football", img:"https://images.unsplash.com/photo-1508098682722-e99c43a406b2" },
+{ name:"Football", price:899, category:"football", img:"https://gallery.yopriceville.com/Free-Clipart-Pictures/Sport-PNG/Football_PNG_Clipart"" },
+{ name:"Football Boots", price:2499, category:"football", img:"https://www.pngall.com/wp-content/uploads/11/Football-Boots-PNG-Image-File.png" },
+{ name:"Goalkeeper Gloves", price:1299, category:"football", img:"https://www.citypng.com/public/uploads/preview/red-gloves-goalkeeper-adidas-football-soccer-704081694879496vhzeevzq7f.png?v=2026031315" },
+{ name:"Shin Guards", price:699, category:"football", img:"https://flashhockey.in/wp-content/uploads/2025/06/Super-Nova-600x750.png" },
+{ name:"Football Net", price:1799, category:"football", img:"https://img.freepik.com/premium-photo/soccer-goal-white-png-transparent-background_94628-26841.jpg" },
 
-{ name:"Cricket Bat", price:1999, category:"cricket", img:"https://assets-jiocdn.ajio.com/medias/sys_master/r…b9009ac5f8de9/-473Wx593H-702373995-blue-MODEL.jpg"},
-{ name:"Cricket Ball", price:399, category:"cricket", img:"https://images.unsplash.com/photo-1584464491033-06628f3a6b7b" },
-{ name:"Batting Gloves", price:999, category:"cricket", img:"https://images.unsplash.com/photo-1624880357913-a8539238245b" },
-{ name:"Cricket Pads", price:1799, category:"cricket", img:"https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa" },
-{ name:"Cricket Helmet", price:1599, category:"cricket", img:"https://images.unsplash.com/photo-1603539444875-76e7684265f6" },
+{ name:"Cricket Bat", price:1999, category:"cricket", img:"https://toppng.com/uploads/preview/sg-hp-sg-impact-xtreme-english-willow-cricket-bat-full-size-11562939846hnaixaupge.png"},
+{ name:"Cricket Ball", price:399, category:"cricket", img:"https://www.transparentpng.com/download/cricket-ball/urvncf-cricket-ball-best.png" },
+{ name:"Batting Gloves", price:999, category:"cricket", img:"https://wallpapers.com/images/hd/cricket-batting-gloves-m-r-f-brand-txj9h7kutuhyzo6w.jpg" },
+{ name:"Cricket Pads", price:1799, category:"cricket", img:"https://w7.pngwing.com/pngs/656/6/png-transparent-pads-batting-cricket-bats-baseball-cricket-white-sports-equipment-sports.png" },
+{ name:"Cricket Helmet", price:1599, category:"cricket", img:"https://scssports.in/cdn/shop/files/ssskullplaincap-2025-05-21T124752.981.png?v=1747811972&width=1200" },
 
-{ name:"Basketball", price:999, category:"basketball", img:"https://images.unsplash.com/photo-1519861531473-9200262188bf" },
-{ name:"Basketball Shoes", price:2999, category:"basketball", img:"https://images.unsplash.com/photo-1528701800489-20be3c8e7d9c" },
-{ name:"Basketball Net", price:899, category:"basketball", img:"https://images.unsplash.com/photo-1517649763962-0c623066013b" },
-{ name:"Basketball Jersey", price:799, category:"basketball", img:"https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a" },
-{ name:"Basketball Pump", price:299, category:"basketball", img:"https://images.unsplash.com/photo-1606813909355-4c1a01eafc5b" },
+{ name:"Basketball", price:999, category:"basketball", img:"https://png.pngtree.com/png-vector/20250708/ourmid/pngtree-orange-basketball-png-image_16721120.webp" },
+{ name:"Basketball Shoes", price:2999, category:"basketball", img:"https://as1.ftcdn.net/jpg/05/48/33/52/1000_F_548335265_5sncl0WxsQHb88lSeVQcqRPocI414gk6.jpg" },
+{ name:"Basketball Net", price:899, category:"basketball", img:"https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTA5L3NtYWxsZGVzaWduY29tcGFueTAxX3JlYWxfcGhvdG9fb2Zfb3V0ZG9vcl9iYXNrZXRiYWxsX25ldF9pc29sYV8zNGJkZWQyYS0yOWRhLTQwNmItYTBjZC02NmYzZjE3NGMwNWRfMS5wbmc.png" },
+{ name:"Basketball Jersey", price:799, category:"basketball", img:"https://png.pngtree.com/png-clipart/20220111/original/pngtree-hand-painted-nba-jersey-png-image_7082759.png" },
+{ name:"Basketball Pump", price:299, category:"basketball", img:"https://cdn11.bigcommerce.com/s-qhxysj/images/stencil/1280x1280/products/593/2145/WTBA4000N_0_NBA_Authentic_Aluminum_Pump_BL__47632.1655095770.png?c=2" },
 
-{ name:"Dumbbells", price:1899, category:"fitness", img:"https://images.unsplash.com/photo-1526676037777-05a232554f77" },
-{ name:"Yoga Mat", price:799, category:"fitness", img:"https://images.unsplash.com/photo-1594737625785-c1c5c9f16b06" },
-{ name:"Skipping Rope", price:499, category:"fitness", img:"https://images.unsplash.com/photo-1599058917765-a780eda07a3e" },
-{ name:"Resistance Bands", price:699, category:"fitness", img:"https://images.unsplash.com/photo-1599058917212-d750089bc07e" },
-{ name:"Kettlebell", price:1599, category:"fitness", img:"https://images.unsplash.com/photo-1517838277536-f5f99be501cd" },
+{ name:"Dumbbells", price:1899, category:"fitness", img:"https://t3.ftcdn.net/jpg/06/04/58/12/360_F_604581226_x37uI5JgVGTir2BBC334UzYdqcieLG44.jpg" },
+{ name:"Yoga Mat", price:799, category:"fitness", img:"https://static.vecteezy.com/system/resources/previews/049/238/570/non_2x/rolled-up-purple-yoga-mat-free-png.png" },
+{ name:"Skipping Rope", price:499, category:"fitness", img:"https://toppng.com/uploads/preview/skipping-rope-11551055907fmnfswwlzr.png" },
+{ name:"Resistance Bands", price:699, category:"fitness", img:"https://static.vecteezy.com/system/resources/thumbnails/048/871/510/small_2x/fitness-resistance-bands-3d-illustration-workout-and-exercise-icon-png.png" },
+{ name:"Kettlebell", price:1599, category:"fitness", img:"https://freepngimg.com/save/42053-kettlebell-download-hd-png/1324x993" },
 
-{ name:"Badminton Racket", price:1299, category:"badminton", img:"https://images.unsplash.com/photo-1611516491426-03025e6043c3" },
-{ name:"Shuttlecock Pack", price:399, category:"badminton", img:"https://images.unsplash.com/photo-1595433562696-8f7c9aee06b6" },
-{ name:"Badminton Shoes", price:2299, category:"badminton", img:"https://images.unsplash.com/photo-1542291026-7eec264c27ff" },
-{ name:"Badminton Net", price:999, category:"badminton", img:"https://images.unsplash.com/photo-1517649763962-0c623066013b" },
-{ name:"Racket Grip", price:199, category:"badminton", img:"https://images.unsplash.com/photo-1606813909355-4c1a01eafc5b" }
+{ name:"Badminton Racket", price:1299, category:"badminton", img:"https://pngimg.com/d/badminton_PNG10450.png" },
+{ name:"Shuttlecock Pack", price:399, category:"badminton", img:"https://store.cosco.in/cdn/shop/files/J9A8038_copy_2_2_1024x1024.jpg?v=1762597338" },
+{ name:"Badminton Shoes", price:2299, category:"badminton", img:"https://in.hndrd.co/cdn/shop/files/Artboard_1_66be91cb00.png?v=1749011273&width=800" },
+{ name:"Badminton Net", price:999, category:"badminton", img:"https://static.vecteezy.com/system/resources/previews/037/278/272/non_2x/badminton-net-isolated-on-background-3d-rendering-illustration-free-png.png" },
+{ name:"Racket Grip", price:199, category:"badminton", img:"https://m.media-amazon.com/images/I/516qNIwY7UL.jpg" }
 
 ];
 
