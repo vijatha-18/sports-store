@@ -2,7 +2,7 @@
 
 const products = [
 
-{ name:"Football", price:899, category:"football", img:"https://gallery.yopriceville.com/Free-Clipart-Pictures/Sport-PNG/Football_PNG_Clipart"" },
+{ name:"Football", price:899, category:"football", img:"https://gallery.yopriceville.com/Free-Clipart-Pictures/Sport-PNG/Football_PNG_Clipart" },
 { name:"Football Boots", price:2499, category:"football", img:"https://www.pngall.com/wp-content/uploads/11/Football-Boots-PNG-Image-File.png" },
 { name:"Goalkeeper Gloves", price:1299, category:"football", img:"https://www.citypng.com/public/uploads/preview/red-gloves-goalkeeper-adidas-football-soccer-704081694879496vhzeevzq7f.png?v=2026031315" },
 { name:"Shin Guards", price:699, category:"football", img:"https://flashhockey.in/wp-content/uploads/2025/06/Super-Nova-600x750.png" },
