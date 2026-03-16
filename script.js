@@ -23,7 +23,7 @@ const products = [
 { name:"Dumbbells", price:1899, category:"fitness", img:"https://t3.ftcdn.net/jpg/06/04/58/12/360_F_604581226_x37uI5JgVGTir2BBC334UzYdqcieLG44.jpg" },
 { name:"Yoga Mat", price:799, category:"fitness", img:"https://static.vecteezy.com/system/resources/previews/049/238/570/non_2x/rolled-up-purple-yoga-mat-free-png.png" },
 { name:"Skipping Rope", price:499, category:"fitness", img:"https://cdnspecseu.bizay.com/cdn-cgi/image/format=webp,quality=80/8_1/imagens_GivingEurope_transformed/005396-017999999-3D135-FRT-PRO03-GIV.png?v=638473481363059831" },
-{ name:"Resistance Bands", price:699, category:"fitness", img:"https://www.vecteezy.com/free-png/resistance-bands" },
+{ name:"Resistance Bands", price:699, category:"fitness", img:"https://cdn11.bigcommerce.com/s-w714q7l43z/images/stencil/1280x1280/products/186/749/pull_up_band_green__21958.1592825140.png?c=1?imbypass=on" },
 { name:"Kettlebell", price:1599, category:"fitness", img:"https://freepngimg.com/save/42053-kettlebell-download-hd-png/1324x993" },
   
 { name:"Badminton Racket", price:1299, category:"badminton", img:"https://pngimg.com/d/badminton_PNG10448.png" },
