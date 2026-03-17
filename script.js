@@ -17,7 +17,7 @@ const products = [
 { name:"Basketball", price:999, category:"basketball", img:"https://png.pngtree.com/png-vector/20250708/ourmid/pngtree-orange-basketball-png-image_16721120.webp" },
 { name:"Basketball Shoes", price:2999, category:"basketball", img:"https://www.nicepng.com/png/detail/29-292731_nike-shoes-png-nike-basketball-shoes-png.png" },
 { name:"Basketball Net", price:899, category:"basketball", img:"https://png.pngtree.com/png-clipart/20241127/original/pngtree-vector-basketball-net-png-image_17327629.png" },
-{ name:"Basketball Jersey", price:799, category:"basketball", img:"https://png.pngtree.com/png-clipart/20220111/original/pngtree-hand-painted-nba-jersey-png-image_7082759.png" },
+{ name:"Basketball Jersey", price:799, category:"basketball", img:"https://pngtree.com/freepng/hand-painted-nba-jersey_7082759.html" },
 { name:"Basketball Pump", price:299, category:"basketball", img:"https://cdn11.bigcommerce.com/s-qhxysj/images/stencil/1280x1280/products/593/2145/WTBA4000N_0_NBA_Authentic_Aluminum_Pump_BL__47632.1655095770.png?c=2" },
 
 { name:"Dumbbells", price:1899, category:"fitness", img:"https://t3.ftcdn.net/jpg/06/04/58/12/360_F_604581226_x37uI5JgVGTir2BBC334UzYdqcieLG44.jpg" },
